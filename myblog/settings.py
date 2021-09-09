@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-c&hs6b@p*u#t5u_8#2nd6nc3ua0v39yaf@mtgt-$dcy=p4p8s!
 # DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['47.109.84.168']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -117,9 +117,9 @@ DATABASES = {
     # },
     'default':{
         'ENGINE': 'django.db.backends.mysql',
-        'HOST' : '192.168.1.116',
+        'HOST' : '127.0.0.1',
         'PORT' : '3306',
-        'USER' : 'root',
+        'USER' : 'zzhsql',
         'PASSWORD' : '19980620',
         'NAME': 'myblog',
     }

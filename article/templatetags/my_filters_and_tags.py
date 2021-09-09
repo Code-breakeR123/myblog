@@ -24,7 +24,7 @@ def time_since_zh(value):
     if diff.days == 0 and diff.seconds >= 60 and diff.seconds < 3600:
         return str(math.floor(diff.seconds / 60)) + "分钟前"
     if diff.days == 0 and diff.seconds >= 3600 and diff.seconds < 86400:
-        return str(math.floor(diff.seconds) / 3600) + "小时前"
+        return str(math.floor(diff.seconds / 3600))[0] + "小时前"
     if diff.days >= 1 and diff.days < 30:
         return str(diff.days) + '天前'
     if diff.days >= 30 and diff.days < 365:
